@@ -1,32 +1,21 @@
-# Conversational-Chat-Bot
+## Gemini Image Demo Readme
+This project uses the Gemini Generative Model to generate content based on an input prompt and an image. The model is accessed using the Google GenAI API.
 
-- Gemini LLM Application
-This is a simple Streamlit app that demonstrates the use of the Gemini LLM model to generate text based on a given prompt. The app allows the user to input a question or prompt, and then generates a response using the Gemini LLM model.
+# Setup
+- To run this project, you will need to have Python installed on your machine. Additionally, you will need to have a Google Cloud account and set up the GenAI API with an API key.
 
-- Setup
-To run the app, you will need to have Python and Streamlit installed. You will also need to have a Google Cloud account and have set up the GOOGLE_API_KEY environment variable with your API key.
+- Install the required libraries by running 
+```$ pip install -r requirements.txt```
 
-To install the required Python packages, run the following command:
+- Create a ```.env file``` in the root directory and add your Google API key as follows: ```GOOGLE_API_KEY=your-api-key```
 
-Copy code
-```
-```
-$ pip install -r requirements.txt
-```
-```
-Usage
-To run the app, simply execute the following command:
+- Run the application with ```$ streamlit run app.py```
 
-Copy code
-streamlit run app.py
-This will start the Streamlit app, which will open in your web browser.
+## Usage
+- Enter a prompt in the text input box.
+- Upload an image using the file uploader.
+- Click the "Tell me about the image" button to generate a response.
+The generated response will be displayed below the button. The model uses the input prompt and the uploaded image to generate the response.
 
-To use the app, simply enter a question or prompt in the text input field and click the "Ask the question" button. The app will generate a response using the Gemini LLM model and display it on the screen.
-
-Dependencies
-The app requires the following dependencies:
-
-Python
-Streamlit
-Google Cloud SDK
-Gemini LLM model
+## Contact
+For any questions or issues, please open an issue on the project's GitHub repository.
