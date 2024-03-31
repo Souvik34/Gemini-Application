@@ -1,4 +1,5 @@
-## Gemini Image Demo Readme
+## Gemini Image Demo
+
 This project uses the Gemini Generative Model to generate content based on an input prompt and an image. The model is accessed using the Google GenAI API.
 
 # Setup
